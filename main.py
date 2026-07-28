@@ -2,6 +2,9 @@ import pandas as pd
 import random
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
+from sklearn.decomposition import PCA
+
+random.seed(42)
 
 # Create synthetic patient data
 # Create a larger synthetic patient dataset
@@ -23,11 +26,10 @@ patient_data = pd.DataFrame(patients)
 patient_data.to_csv("synthetic_patients.csv", index=False)
 
 # Display the dataset
-print(patient_data)
+ # print(patient_data)
 # Convert categories into numbers
-encoded_data = pd.get_dummies(patient_data)
+encoded_data = pd.get_dummies(patient_data.drop("Patient_ID", axis=1))
 
-print(encoded_data)
 from sklearn.cluster import KMeans
 
 # Create a K-Means model with 2 clusters
@@ -38,6 +40,7 @@ kmeans.fit(encoded_data)
 
 # Save each patient's cluster
 patient_data["Cluster"] = kmeans.labels_
+
 # Count how many patients are in each cluster
 print("\nNumber of patients in each cluster:")
 print(patient_data["Cluster"].value_counts())
@@ -47,26 +50,29 @@ print("\nCluster summaries:")
 cluster_summary = encoded_data.copy()
 cluster_summary["Cluster"] = kmeans.labels_
 
-print(cluster_summary.groupby("Cluster").mean())
+print(cluster_summary.groupby("Cluster").mean().T)
 
 # Show the results
-print(patient_data)
+ # print(patient_data)
 import matplotlib.pyplot as plt
+
+# Reduce the data to 2 dimensions for visualization
+pca = PCA(n_components=2)
+pca_data = pca.fit_transform(encoded_data)
 
 # Create a scatter plot of the clusters
 plt.figure(figsize=(6, 4))
 plt.scatter(
-    patient_data["Patient_ID"],
-    patient_data["Cluster"],
-    c=patient_data["Cluster"],
+    pca_data[:, 0],
+    pca_data[:, 1],
+    c=patient_data["Cluster"]
 )
-plt.title("Patient Clusters")
-# Add labels and title
-plt.title("Patient Clusters")
-plt.xlabel("Patient ID")
-plt.ylabel("Cluster")
 
-# Save the graph as an image
+plt.title("Valley Fever Patient Clusters")
+plt.xlabel("Principal Component 1")
+plt.ylabel("Principal Component 2")
+
+# Save the graph
 plt.savefig("patient_clusters.png", dpi=300)
 
 # Display the graph
