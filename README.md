@@ -1,0 +1,25 @@
+# Valley Fever Patient Clustering Project
+
+## Overview
+
+This project demonstrates how machine learning techniques can be used to analyze healthcare related data and identify patterns within patient information. Using a synthetic patient dataset, this project applies K-Means clustering to group patients based on similarities in selected characteristics.
+
+## Tools Used
+
+- Python
+- pandas
+- scikit-learn
+- matplotlib
+- K-Means clustering
+
+## What This Project Does
+
+This program:
+- Creates a synthetic patient dataset representing healthcare-related information.
+- Organizes patient data into a structured table.
+- Prepares the data so it can be analyzed using machine learning methods.
+- Uses K-Means clustering to group similar patients based on shared characteristics.
+- Creates a visualization to display the identified patient clusters.
+
+## Project Outcomes
+The final visualization demonstrates how machine learning can be used to uncover patterns within patient data. This project provides experience with healthcare data organization, machine learning workflows, and data visualization.

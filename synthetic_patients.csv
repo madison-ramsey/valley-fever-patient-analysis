@@ -1,0 +1,41 @@
+Patient_ID,Age_Group,Fever,Cough,Fatigue,Housing,Employment,Education,Social_Support,Access_to_Care
+1,56+,Medium,Yes,Yes,Stable,Unemployed,High School,Medium,Poor
+2,56+,Low,Yes,No,Stable,Part-time,High School,High,Good
+3,18-35,High,No,Yes,Unstable,Part-time,High School,Low,Good
+4,18-35,Medium,No,Yes,Unstable,Full-time,College,Medium,Good
+5,36-55,High,No,Yes,Stable,Full-time,High School,High,Good
+6,56+,Low,No,No,Unstable,Part-time,College,Medium,Good
+7,56+,Medium,No,Yes,Unstable,Unemployed,High School,High,Poor
+8,56+,Medium,No,No,Stable,Unemployed,College,Low,Poor
+9,56+,Low,Yes,Yes,Unstable,Unemployed,High School,High,Poor
+10,18-35,Medium,No,No,Stable,Full-time,College,Low,Good
+11,18-35,Medium,No,Yes,Unstable,Full-time,High School,Medium,Poor
+12,36-55,Medium,No,No,Stable,Part-time,College,Low,Poor
+13,36-55,Medium,Yes,No,Stable,Unemployed,High School,Medium,Good
+14,18-35,Low,No,Yes,Stable,Full-time,College,Low,Poor
+15,36-55,Low,No,Yes,Stable,Unemployed,High School,Medium,Good
+16,18-35,Low,Yes,Yes,Stable,Part-time,High School,High,Poor
+17,18-35,Medium,No,No,Stable,Unemployed,College,High,Poor
+18,56+,Low,Yes,No,Stable,Part-time,College,High,Poor
+19,18-35,High,Yes,Yes,Stable,Full-time,College,High,Poor
+20,18-35,Low,Yes,Yes,Stable,Unemployed,College,Medium,Poor
+21,36-55,High,Yes,No,Unstable,Full-time,College,High,Good
+22,56+,Low,No,No,Unstable,Part-time,High School,High,Poor
+23,18-35,High,No,Yes,Unstable,Unemployed,College,Low,Poor
+24,18-35,Medium,No,No,Unstable,Part-time,High School,Medium,Good
+25,36-55,High,Yes,Yes,Unstable,Full-time,College,Medium,Poor
+26,36-55,High,No,Yes,Stable,Full-time,High School,High,Good
+27,56+,Medium,No,No,Unstable,Part-time,College,Medium,Good
+28,36-55,High,Yes,Yes,Unstable,Part-time,College,Medium,Good
+29,36-55,Low,No,Yes,Unstable,Full-time,College,Medium,Good
+30,56+,High,No,No,Unstable,Unemployed,High School,Medium,Poor
+31,36-55,Low,No,No,Unstable,Full-time,High School,Low,Poor
+32,56+,Low,No,No,Stable,Part-time,College,Low,Good
+33,56+,Medium,Yes,Yes,Stable,Part-time,High School,Low,Poor
+34,18-35,Low,Yes,Yes,Stable,Full-time,High School,High,Poor
+35,56+,Medium,Yes,Yes,Stable,Unemployed,College,High,Poor
+36,36-55,Low,Yes,No,Unstable,Part-time,College,High,Good
+37,18-35,High,Yes,No,Stable,Part-time,High School,Medium,Good
+38,56+,High,Yes,Yes,Stable,Full-time,College,High,Good
+39,36-55,Medium,Yes,Yes,Stable,Unemployed,High School,Medium,Good
+40,56+,Low,No,Yes,Unstable,Unemployed,High School,Medium,Good
