@@ -23,3 +23,9 @@ This program:
 
 ## Project Outcomes
 The final visualization demonstrates how machine learning can be used to uncover patterns within patient data. This project provides experience with healthcare data organization, machine learning workflows, and data visualization.
+
+## Project Visualization
+
+Below is a visualization of the patient clusters identified by the K-Means clustering algorithm.
+
+![Patient Clusters](patient_clusters.png)
