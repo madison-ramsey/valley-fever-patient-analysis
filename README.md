@@ -16,10 +16,12 @@ This project demonstrates how machine learning techniques can be used to analyze
 
 This program:
 - Creates a synthetic patient dataset representing healthcare-related information.
-- Organizes patient data into a structured table.
-- Prepares the data so it can be analyzed using machine learning methods.
-- Uses K-Means clustering to group similar patients based on shared characteristics.
-- Creates a visualization to display the identified patient clusters.
+- Converts categorical patient information into a format that machine learning algorithms can analyze.
+- Uses K-Means clustering to automatically group patients with similar characteristics.
+- Excludes patient identifiers from the clustering process to prevent irrelevant information from influencing the results.
+- Generates cluster summaries to help interpret the characteristics of each patient group.
+- Uses Principal Component Analysis (PCA) to visualize the multi-dimensional patient clusters in a two-dimensional graph.
+- Produces reproducible results by using a fixed random seed.
 
 ## Dataset Features
 
