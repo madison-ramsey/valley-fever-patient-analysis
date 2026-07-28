@@ -21,6 +21,22 @@ This program:
 - Uses K-Means clustering to group similar patients based on shared characteristics.
 - Creates a visualization to display the identified patient clusters.
 
+## Dataset Features
+
+The synthetic patient dataset includes healthcare-related and social factors used for clustering analysis:
+
+- Patient ID
+- Age group
+- Fever symptoms
+- Cough symptoms
+- Housing factors
+- Employment status
+- Education level
+- Social support
+- Access to care
+
+These features were used to identify patterns and group patients with similar characteristics using K-Means clustering.
+
 ## Project Outcomes
 The final visualization demonstrates how machine learning can be used to uncover patterns within patient data. This project provides experience with healthcare data organization, machine learning workflows, and data visualization.
 
