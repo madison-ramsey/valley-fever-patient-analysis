@@ -25,15 +25,12 @@ patient_data = pd.DataFrame(patients)
 # Save the synthetic dataset
 patient_data.to_csv("synthetic_patients.csv", index=False)
 
-# Display the dataset
- # print(patient_data)
 # Convert categories into numbers
+# Remove Patient ID because identifiers should not influence patient similarity
 encoded_data = pd.get_dummies(patient_data.drop("Patient_ID", axis=1))
 
-from sklearn.cluster import KMeans
-
 # Create a K-Means model with 2 clusters
-kmeans = KMeans(n_clusters=2, random_state=42)
+kmeans = KMeans(n_clusters=2, random_state=42, n_init=10)
 
 # Fit the model to the encoded data
 kmeans.fit(encoded_data)
@@ -51,10 +48,6 @@ cluster_summary = encoded_data.copy()
 cluster_summary["Cluster"] = kmeans.labels_
 
 print(cluster_summary.groupby("Cluster").mean().T)
-
-# Show the results
- # print(patient_data)
-import matplotlib.pyplot as plt
 
 # Reduce the data to 2 dimensions for visualization
 pca = PCA(n_components=2)
