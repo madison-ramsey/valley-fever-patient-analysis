@@ -29,3 +29,12 @@ The final visualization demonstrates how machine learning can be used to uncover
 Below is a visualization of the patient clusters identified by the K-Means clustering algorithm.
 
 ![Patient Clusters](patient_clusters.png)
+
+## Future Improvements
+
+Potential future improvements for this project include:
+
+- Applying the analysis to real-world de-identified healthcare datasets.
+- Exploring additional machine learning approaches for patient pattern identification.
+- Evaluating different clustering methods and parameters to improve analysis results.
+- Expanding the dataset with additional healthcare-related variables.
