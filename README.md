@@ -27,9 +27,10 @@ The synthetic patient dataset includes healthcare-related and social factors use
 
 - Patient ID
 - Age group
-- Fever symptoms
+- Fever severity 
 - Cough symptoms
-- Housing factors
+- Fatigue
+- Housing stability
 - Employment status
 - Education level
 - Social support
